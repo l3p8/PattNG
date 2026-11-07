@@ -16,10 +16,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      # The Aether core now ships as a prebuilt artifact (android arm64-v8a only) from
-      # l3p8/Aether, so neither the Rust nor the Go toolchain is needed, and tor or
-      # psiphon are not built.
 
     steps:
     - name: Checkout code
